@@ -2,6 +2,6 @@ FROM debian
 
 RUN apt update
 RUN apt upgrade -y
-RUN apt install mc htop
+RUN apt -y install mc htop
 
-CMD ["echo", "Hola desde docker"]
+RUN ["echo", "Hola desde docker"]
