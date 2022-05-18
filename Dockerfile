@@ -4,4 +4,11 @@ RUN apt update
 RUN apt upgrade -y
 RUN apt -y install mc htop
 
-RUN ["echo", "Hola desde docker"]
+RUN apt -y install openssh-server openssh-client
+RUN apt -y install python3
+
+WORKDIR /bobo
+
+COPY app.py .
+
+CMD [ "python3", "app.py" ]
