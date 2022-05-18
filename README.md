@@ -1,5 +1,6 @@
 # docker_github
-pruebas de docker desde github,
-1) debian
-2) actualizar
-3) instalar dos paquetes
+Prueba básica de un Dockerfile desde GitHub con debian.
+* 1) Se actualiza e instala dos paquetes.
+* 2) Instala Python 3
+* 3) Copia el fichero app.y
+* 4) Y finalmente lo ejecuta.
