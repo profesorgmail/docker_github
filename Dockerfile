@@ -4,10 +4,10 @@ RUN apt update
 RUN apt upgrade -y
 RUN apt -y install mc htop
 
-RUN apt -y install openssh-server openssh-client
+#RUN apt -y install openssh-server openssh-client
 RUN apt -y install python3
 
-WORKDIR /bobo
+WORKDIR /src
 
 COPY app.py .
 
